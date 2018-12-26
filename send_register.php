@@ -32,8 +32,8 @@
         base64_encode('Password tidak boleh kosong'));
     }
     $level = 'Konsumen';
-    $sql = "INSERT INTO pengguna (nama, alamat, telp, Username, Password, level)
-    VALUES ('$depan','$belakang','$email','$username','$password','$level')";
+    $sql = "INSERT INTO pengguna (nama, alamat, telp, gender, Username, Password, level)
+    VALUES ('$nama','$alamat','$telp','$gender','$username','$password','$level')";
     $insert = $conn->query($sql);
     if (!$insert) {
         echo "<script>alert('".$conn->error."');
